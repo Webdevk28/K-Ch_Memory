@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,55 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* Add these styles to your CSS file */
+.filter-item {
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.filter-item.active {
+  color: #1831d5;
+  font-weight:700;
+}
+
+.gallery-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.gallery-item.show {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.gallery-item.hide {
+  opacity: 0;
+  transform: translateY(20px);
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Grid container needs position relative */
+.grid-container {
+  position: relative;
 }
