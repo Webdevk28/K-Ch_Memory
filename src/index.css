@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Dancing+Script:wght@400..700&family=Marcellus+SC&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+.Kk-Ch_font {
+  font-family: "Dancing Script", cursive;
+  font-family: "Marcellus SC", serif;
+  font-family: "Arizonia", cursive;
+}
+.Ch-Kk_font {
+  font-family: "Dancing Script", cursive;
+}
+
+.normal-font {
+  font-family: "Philosopher", sans-serif;
+}
 
 body {
   margin: 0;
@@ -27,7 +40,7 @@ code {
 }
 
 .filter-item.active {
-  color: #1831d5;
+  color: #f84cc4;
   font-weight:700;
 }
 

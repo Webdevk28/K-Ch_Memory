@@ -9,11 +9,11 @@ function Header () {
     const toggleMenu = () => setMenuOpened(!menuOpened)
 
     return (
-        <section className="p-3 z-50">
+        <section className=" z-50">
             <div className="header p-4 rounded-lg shadow-md">
                 <div className="max-w-6xl m-auto flex justify-between items-center text-slate-800">
                     <div className="w-full p-10 absolute top-0 left-0 z-20 bg-slate-700 md:hidden"></div>
-                    <div className="text-3xl z-50">Google</div>
+                    <div className="Kk-Ch_font text-3xl z-50">Koeung & Sochea</div>
                     
                     <div className="z-50"><Navbar NavbarStyle={"hidden md:flex gap-8"} /></div>
                     <div className="z-10 medium-16 text-slate-100​ shadow-md md:hidden"> 

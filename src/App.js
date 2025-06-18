@@ -4,11 +4,12 @@ import './App.css';
 import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import KkCh from './components/KkCh';
 
 function App() {
   return (
     <Router>
-      <Header />
+      <KkCh />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Add more routes here */}
